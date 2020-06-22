@@ -9,7 +9,7 @@
 	.container > div > img {
 		width: 50%;
 		height: 50%;
-		object-fit: cover;
+		object-fit:scale-down;
 	}
 
 html, body {
