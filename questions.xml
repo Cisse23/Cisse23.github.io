@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<quiz>
+<question>
+<questionText>Who is the author of this column?</questionText>
+<incorrect>Pat McClellan</incorrect>
+<incorrect>Darrel Plant</incorrect>
+<incorrect>Gary Rozensweig</incorrect>
+<correct>Will Turnage</correct>
+</question>
+<question>
+<questionText>Who writes Director Online's Lingo Lounge column?</questionText>
+<incorrect>Pat McClellan</incorrect>
+<incorrect>Darrel Plant</incorrect>
+<correct>Gary Rozensweig</correct>
+<incorrect>Will Turnage</incorrect>
+</question>
+<question>
+<questionText>Who is Director Online's Technical Editor?</questionText>
+<incorrect>Pat McClellan</incorrect>
+<correct>Darrel Plant</correct>
+<incorrect>Gary Rozensweig</incorrect>
+<incorrect>Will Turnage</incorrect>
+</question>
+</quiz>
