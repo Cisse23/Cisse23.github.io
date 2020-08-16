@@ -1,4 +1,6 @@
-﻿/*Global styles*/
+﻿
+
+/*Global styles*/
 
 * {
     box-sizing: inherit; /*This makes sure that the padding and border are included in the total width and height of the elements.*/
@@ -21,6 +23,7 @@ ul{
 p {
     font-size: 1.6rem;
     text-align: center;
+    color: #475860;
 }
 
 h1 {
@@ -33,11 +36,13 @@ h1 {
 h2 {
     font-size: 2.5rem;
     text-align: center;
+    color: #475860;
 }
 
 h3 {
     font-size: 2rem;
     text-align: center;
+    color: #475860;
 }
 
 img{
@@ -50,22 +55,22 @@ section{
     padding: 5rem 0;
 }
 
-body
-{
-    background-color:#fff;
-    margin:0;
-    padding:0;
+body {
+    background-color: #475860;
+    margin: 0;
+    padding: 0;
 }
 
 .quote {
     font-size: 2rem;
     font-style: italic;
+    color: #475860;
 }
 
 .title {
     text-align: center;
     margin-bottom: 10rem;
-    color: #000;
+    color: #475860;
 }
 
     .title h1 {
@@ -75,9 +80,11 @@ body
 
 /* *** NAVIGATION *** */
 
+
+
 .nav {
     width: 100%;
-    background-color: #0d81a3;
+    background-color: #475860;
     position: fixed;
     top: 0;
     left: 0;
@@ -85,41 +92,40 @@ body
     padding: 0.5rem;
 }
 
-.nav a {
-    float: left;
-    display: block;
-    color: #333;
-    text-align: center;
-    font-size:1.6rem;
-    padding: 1.2rem 1.4rem;
-    text-decoration: none;
-}
+    .nav a {
+        float: left;
+        display: block;
+        color: #E79A72;
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 1.2rem 1.4rem;
+        text-decoration: none;
+    }
 
-.nav a:visited {
-    text-decoration: none;
-    color: #333;
-}
+        .nav a:visited {
+            text-decoration: none;
+            color: #E79A72;
+        }
 
 .nav a:hover {
-    background-color: #cccccc;
-    color: #333;
+    color: #F5D5C7;
 }
 
-.nav a:active {
-    text-decoration: none;
-    background-color: #aaa;
-    color: #333;
-}
+        .nav a:active {
+            text-decoration: none;
+            color: #F5D5C7;
+        }
 
 
 /* *** ABOUT *** */
 
 .about {
     width: 100%;
-    background: linear-gradient(135deg, rgba(49,24,131,0.9)0%, rgba(72,56,149,0.8)100%), url("img1.jpg") center no-repeat;
-    background-size: cover;
+    /*background: linear-gradient(135deg, rgba(49,24,131,0.9)0%, rgba(72,56,149,0.8)100%), url("img1.jpg") center no-repeat;
+    background-size: cover;*/
+    background-color: #F5D5C7;
     position: relative;
-    color: black;
+    color: #475860;
 }
 
     .about img {
@@ -137,8 +143,8 @@ body
 .intro-box {
     height: 60vh;
     padding: 5rem;
-    color: #000;
-    background-color: #a5f4e5;
+    color: #F5D5C7;
+    background-color: #F5D5C7;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -146,15 +152,17 @@ body
     z-index: 1;
 }
 
-.intro-text h3{
-    font-size:1.6rem;
+.intro-text h3 {
+    font-size: 1.6rem;
+    color: #F5D5C7;
 }
 
-    .intro-text h1 {
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size:4rem;
-        margin: 1rem 0;
-    }
+.intro-text h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4rem;
+    margin: 1rem 0;
+    color: #475860;
+}
 
 
 
@@ -182,7 +190,8 @@ body
 /* *** BEST PROJECTS ***  // */
 
 .bestprojects {
-padding:0;
+padding:1rem;
+background-color:#B3DDF3;
 }
 
 .projects-grid{
@@ -194,9 +203,9 @@ padding:0;
 
 .bestprojects-preview {
     height: 40rem;
-    padding: 5rem;
-    color: #000;
-    background-color: #a5f4e5;
+    padding: 3rem;
+    color: #F5D5C7;
+    background-color: #475860;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -208,18 +217,25 @@ padding:0;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
     }
+    .bestprojects-preview h2{
+        color:#E79A72;
+    }
 
     .bestprojects img {
+        padding:0;
     }
 
 
 /* *** SKILLS *** */
 
 .skills {
-    padding: 5rem;
+    padding: 1rem;
     width: 100%;
+   background-color:#E79A72;
+    /*
     background: linear-gradient(135deg, rgba(49,24,131,0.9)0%, rgba(72,56,149,0.8)100%), url("img1.jpg") center no-repeat;
     background-size: cover;
+    */
     position: relative;
     color: black;
 }
@@ -233,8 +249,8 @@ padding:0;
 .skill-box {
     height: 20rem;
     padding: 5rem;
-    color: #000;
-    background-color: #a5f4e5;
+    color: #475860;
+    background-color: #F5D5C7;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -252,10 +268,13 @@ padding:0;
 /* *** CONTACT *** */
 .contact {
     padding: 0;
+    background-color:#475860;
 
 }
 
-
+.contact h1{
+    color:#E79A72;
+}
 
  .contact img{
      padding:1rem;
@@ -269,17 +288,17 @@ padding:0;
 /* *** PROJECTS PAGE *** */
 
 .projects1 {
-    padding: 0;
+    padding: 1rem;
     width: 100%;
-    margin-top: 10rem;
-    background-color: #ccc;
+    background-color: #B3DDF3;
     position: relative;
 }
 
-projects2 {
-    background-color: #fff;
-    padding: 0;
+.projects2 {
+    padding: 1rem;
     width: 100%;
+    background-color: #F5D5C7;
+    position: relative;
 }
 
 /* This is a comment */
