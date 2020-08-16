@@ -23,11 +23,27 @@ p {
     text-align: center;
 }
 
+h1 {
+    font-size: 3rem;
+    margin: 0.5rem 0 1rem;
+    text-align: center;
+    transform: translateY(20%);
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
 img{
     width:100%;
     max-width:100%;
     height:auto;
-
 }
 
 section{
@@ -41,55 +57,41 @@ body
     padding:0;
 }
 
-/*Header*/
-header{
-    width:100%;
-    height: 5rem;
-    position:absolute;
-    top:0;
-    left:0;
-    z-index: 1;
-
+.quote {
+    font-size: 2rem;
+    font-style: italic;
 }
 
-.container{
-    width:100%;
-    max-width:98rem;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
-
-h1 {
+.title {
     text-align: center;
+    margin-bottom: 10rem;
+    color: #000;
 }
 
-h2 {
-    text-align: center;
-}
+    .title h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-
-
-
+    }
 
 /* *** NAVIGATION *** */
 
 .nav {
     width: 100%;
     background-color: #0d81a3;
-    position: absolute;
-    top: -6;
+    position: fixed;
+    top: -10;
     left: 0;
-    z-index:1;
+    z-index:10;
 }
 
-    .nav a {
-        float: left;
-        display: block;
-        color: #333;
-        text-align: center;
-        padding: 1.2rem 1.4rem;
-        text-decoration: none;
-    }
+.nav a {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 1.2rem 1.4rem;
+    text-decoration: none;
+}
 
 .nav a:visited {
     text-decoration: none;
@@ -108,22 +110,38 @@ h2 {
 }
 
 
-/* *** ABOUT ***  // */
+/* *** ABOUT *** */
 
 .about {
     width: 100%;
-    height: 80vh;
     background: linear-gradient(135deg, rgba(49,24,131,0.9)0%, rgba(72,56,149,0.8)100%), url("img1.jpg") center no-repeat;
-    background-size:cover;
-    position:relative;
-    color:black;
-
+    background-size: cover;
+    position: relative;
+    color: black;
 }
 
-.intro-text{
-    width:100%;
-    max-width:50rem;
-    transform: translateY(20%);
+    .about img {
+        border-radius: 100rem;
+        max-height:50rem;
+        max-width:50rem;
+    }
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+}
+
+.intro-box {
+    height: 60vh;
+    padding: 5rem;
+    color: #000;
+    background-color: #a5f4e5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
 }
 
 .intro-text h3{
@@ -136,7 +154,10 @@ h2 {
         margin: 1rem 0;
     }
 
+
+
 .button{
+    align-content:center;
     background-color:hotpink;
     border-radius:2rem;
     color:#fff;
@@ -154,12 +175,6 @@ h2 {
 
 }
 
-.about img {
-    margin: 30px;
-    width: 30%;
-    height: auto;
-    float: right
-}
 
 
 /* *** BEST PROJECTS ***  // */
@@ -167,22 +182,6 @@ h2 {
 .bestprojects {
 padding:0;
 }
-
-.title{
-    text-align:center;
-    margin-bottom:10rem;
-    color:#000;
-}
-
-.title h3{
-    font-size:1.4rem;
-}
-
-    .title h1 {
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 2rem;
-        margin: 0.5rem 0 1rem;
-    }
 
 .projects-grid{
     display:grid;
@@ -205,18 +204,22 @@ padding:0;
 
     .bestprojects-preview h1{
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size:1.7rem;
-        margin: 2rem, 0;
+
     }
 
     .bestprojects img {
     }
 
 
-/* *** SKILLS ***  // */
+/* *** SKILLS *** */
 
 .skills {
-    padding: 0;
+    padding: 5rem;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(49,24,131,0.9)0%, rgba(72,56,149,0.8)100%), url("img1.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    color: black;
 }
 
 .skills-grid {
@@ -231,23 +234,34 @@ padding:0;
     color: #000;
     background-color: #a5f4e5;
     position: relative;
-    display:  flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     z-index: 1;
 }
 
+    .skill-box p {
+        font-size: 1.4rem;
+        padding: 0;
+        margin: 0;
+    }
+
 
 /* *** CONTACT ***  // */
 .contact {
     padding: 0;
+
 }
 
+
+
  .contact img{
-     padding:10px;
-     max-width:64px;
+     padding:1rem;
+     max-width:6.4rem;
      height:auto;
  }
+
+
 
 
 /* *** PROJECTS PAGE ***  // */
