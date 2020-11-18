@@ -130,14 +130,14 @@ body {
     .about img {
         border-radius: 100rem;
         align-self: center;
-        max-height: 45rem;
-        max-width: 45rem;
+        max-height: 40rem;
+        max-width: 40rem;
     }
 
 .intro-grid {
     display: grid;
     
-    grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 0;
 }
 
